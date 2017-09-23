@@ -7,9 +7,9 @@ namespace ConsoleApp1
         static void Main()
         {
             //FahrenheitToCelcius();
-            //ThreeFiveTwenty();
+            ThreeFiveTwenty();
             //DayOfWeek();
-            NumberOfHolidays();
+            //NumberOfHolidays();
         }
 
         static void FahrenheitToCelcius()
@@ -35,17 +35,25 @@ namespace ConsoleApp1
              * которые делятся без остатка или на 3, или на 5, но не делятся на 20. 
              * Разработать консольное приложение, реализующее указанный функционал.
              */
+            int sum = 0;
             Console.Write("Input whole number a: ");
             int a = Convert.ToInt32(Console.ReadLine());
             Console.Write("Input whole number b: ");
             int b = Convert.ToInt32(Console.ReadLine());
+            while (b < a)
+            {
+                Console.WriteLine("b must be equal or greater than a. Input b again:");
+                b = Convert.ToInt32(Console.ReadLine());
+            }
             for (int i = a; i < b + 1; i++)
             {
                 if ((i % 20 != 0) && ((i % 3 == 0) || (i % 5 == 0)))
                 {
                     Console.WriteLine(i);
+                    sum += i;
                 }
             }
+            Console.WriteLine("Sum = " + sum);
             Console.ReadKey();
         }
 
