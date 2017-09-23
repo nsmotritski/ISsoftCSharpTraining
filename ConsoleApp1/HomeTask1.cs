@@ -7,8 +7,8 @@ namespace ConsoleApp1
         static void Main()
         {
             //FahrenheitToCelcius();
-            ThreeFiveTwenty();
-            //DayOfWeek();
+            //ThreeFiveTwenty();
+            DayOfWeek();
             //NumberOfHolidays();
         }
 
@@ -89,7 +89,7 @@ namespace ConsoleApp1
                     Console.WriteLine("Пятница");
                     break;
                 default:
-                    Console.WriteLine("Выходной");
+                    Console.WriteLine("выходной!");
                     break;
             }
             Console.ReadKey();
