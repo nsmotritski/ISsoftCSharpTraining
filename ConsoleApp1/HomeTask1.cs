@@ -4,13 +4,14 @@ namespace ConsoleApp1
 {
     class HomeTask1
     {
-        static void Main()
-        {
-            //FahrenheitToCelcius();
-            //ThreeFiveTwenty();
-            DayOfWeek();
-            //NumberOfHolidays();
-        }
+        //static void Main()
+        //{
+        //    //FahrenheitToCelcius();
+        //    //ThreeFiveTwenty();
+        //    //DayOfWeek();
+        //    //NumberOfHolidays();
+            
+        //}
 
         static void FahrenheitToCelcius()
         {
